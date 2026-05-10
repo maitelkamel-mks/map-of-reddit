@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -sI https://anvaka.github.io/map-of-reddit-data/v3/graph.svg)",
+      "Bash(curl -L https://anvaka.github.io/map-of-reddit-data/v3/graph.svg -o /Users/momo/Dev/depots/sandbox/map-of-reddit/public/data/graph.svg)",
+      "Bash(curl -sI https://anvaka.github.io/map-of-reddit-data/v3/node-ids.txt)",
+      "Bash(curl -sI https://anvaka.github.io/map-of-reddit-data/v3/links.bin)",
+      "Bash(curl -L https://anvaka.github.io/map-of-reddit-data/v3/node-ids.txt -o /Users/momo/Dev/depots/sandbox/map-of-reddit/public/data/node-ids.txt)",
+      "Bash(curl -L https://anvaka.github.io/map-of-reddit-data/v3/links.bin -o /Users/momo/Dev/depots/sandbox/map-of-reddit/public/data/links.bin)",
+      "Bash(sed -n *)"
+    ]
+  }
+}
