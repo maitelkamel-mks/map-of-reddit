@@ -307,7 +307,7 @@ export default {
   mounted() {
     const canvas = document.getElementById("cnv");
     nameToInstance = new Map();
-    this.isWebGLEnabled = isWebGLEnabled(canvas);
+    this.isWebGLEnabled = isWebGLEnabled();
     if (!this.isWebGLEnabled) return;
 
     let svgRenderer = createStreamingSVGRenderer(canvas);

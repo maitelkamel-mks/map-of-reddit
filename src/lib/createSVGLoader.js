@@ -112,10 +112,9 @@ export default function createSVGLoader(url) {
     }
 
     function getPathTo(name) {
-      if (url.indexOf('http') < 0) return name;
-      let baseUrl = new URL(url);
-      baseUrl.pathname = baseUrl.pathname.substr(0, baseUrl.pathname.lastIndexOf('/') + 1) + name;
-      return baseUrl.toString();
+      let lastSlash = url.lastIndexOf('/');
+      let base = lastSlash >= 0 ? url.substring(0, lastSlash + 1) : '';
+      return base + name;
     }
 
     return api;

@@ -5,10 +5,10 @@ let versionToLink = {
   1: 'https://anvaka.github.io/map-of-reddit-data/graph.svg',
   2: 'https://anvaka.github.io/map-of-reddit-data/v2/graph.svg',
   3: 'https://anvaka.github.io/map-of-reddit-data/v3/graph.svg',
-  // 4: 'http://127.0.0.1:8080/graph.svg',
+  4: 'data/graph.svg',
 };
 
-let lastVersion = 3;
+let lastVersion = 4;
 let latestGraphLink = versionToLink[lastVersion];
 // we should ignore camera position if user doesn't have graph version in the link
 // it means they have stored previous link, and we have changed the graph, so their
